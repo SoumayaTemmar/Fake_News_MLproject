@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+ipykernel
+tqdm
+dill
+Flask
+textblob
+nltk
+langdetect
+-e .
