@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignore large data files
+Fake_News_NoteBook/data/*.csv
+Fake_News_NoteBook/data/*.zip
+
 # Distribution / packaging
 .Python
 build/
