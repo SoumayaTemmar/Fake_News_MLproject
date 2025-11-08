@@ -10,6 +10,9 @@ __pycache__/
 Fake_News_NoteBook/data/*.csv
 Fake_News_NoteBook/data/*.zip
 
+#Ignore artifacts folder
+artifacts/
+
 # Distribution / packaging
 .Python
 build/
