@@ -74,3 +74,11 @@ def clean_text( text):
    except Exception as e:
       raise CustomException(e, sys)
    
+
+def load_obj(obj_path):
+
+   try:
+      with open(obj_path, 'rb') as file_obj:
+         return dill.load(obj_path) 
+   except Exception as e:
+      raise CustomException(e,sys)
