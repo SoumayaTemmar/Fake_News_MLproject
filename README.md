@@ -35,10 +35,12 @@ Fake_News_MLProject/
 # 3-Installation & Setup
 - **Clone the repo**
 git clone <repo-url>
+
 cd Fake_News_MLProject
 
 - **Create a virtual environment**
 conda create -p venv python=3.8 -y
+
 conda activate venv/
 
 - **Install dependencies**
