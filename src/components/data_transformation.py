@@ -12,6 +12,8 @@ from sklearn.compose import ColumnTransformer
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+from src.components.model_trainer import ModelTrainer
+
 
 @dataclass
 class DataTransformationConfig:
@@ -61,6 +63,7 @@ class DataTransformation:
          test_df = pd.read_csv(test_path)
 
          #clean the text feature
+         print("cleaning text feature...")
          train_df['clean_text'] = train_df['text'].apply(clean_text)
          test_df['clean_text'] = test_df['text'].apply(clean_text)
 
@@ -75,6 +78,7 @@ class DataTransformation:
          preprocessor = self.get_transformer_obj()
 
          #transform the data
+         print("transforming data...")
          input_features_train_arr = preprocessor.fit_transform(input_features_train_df)
          input_features_test_arr = preprocessor.transform(input_feature_test_df)
 
@@ -101,4 +105,10 @@ if __name__ == "__main__":
    testPath = os.path.join('artifacts', 'test.csv')
 
    train_arr, test_arr,y_train,y_test,_ = data_transformation.initiate_data_transformation(trainPath, testPath)
+
+   #training the model
+   model_trainer = ModelTrainer()
+   classification_report, _ = model_trainer.initiate_model_trainer(train_arr, test_arr, y_train, y_test)
+   print(f"\n classification report: \n {classification_report}")
+
 
