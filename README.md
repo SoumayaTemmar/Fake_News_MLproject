@@ -11,25 +11,25 @@ Dataset contains four columns:
 
 # 1-Features / Key Components
 
-**Data Ingestion:** Cleaning, deduplication, language detection, sentiment scoring.
-**Data Transformation:** TF-IDF vectorization, scaling numeric features.
-**Model Training:** Logistic Regression
-**Predict Pipeline:** Takes new articles, cleans them,calculate numeric diagnostics and predicts label.
-**Evaluation:** Accuracy, precision, recall, F1-score.
+- **Data Ingestion:** Cleaning, deduplication, language detection, sentiment scoring.
+- **Data Transformation:** TF-IDF vectorization, scaling numeric features.
+- **Model Training:** Logistic Regression
+- **Predict Pipeline:** Takes new articles, cleans them,calculate numeric diagnostics and predicts label.
+- **Evaluation:** Accuracy, precision, recall, F1-score.
 
 # 2-Project structure
 Fake_News_MLProject/
-│
-├── artifacts/          # Preprocessed data, trained model, preprocessor
-├── src/                # Source code
-│   ├── components/     # Data ingestion, transformation, model trainer, pipelines
-│   ├── utils.py        # Helper functions
-│   ├── exception.py    # Custom exceptions
-│   └── logger.py       # Logging setup
-├── notebooks/          # Exploratory data analysis / experimentation
-├── requirements.txt    # Project dependencies
-├── setup.py            # for package building
-└── README.md           # This file
+- │
+- ├── artifacts/          # Preprocessed data, trained model, preprocessor
+- ├── src/                # Source code
+- │   ├── components/     # Data ingestion, transformation, model trainer, pipelines
+- │   ├── utils.py        # Helper functions
+- │   ├── exception.py    # Custom exceptions
+- │   └── logger.py       # Logging setup
+- ├── notebooks/          # Exploratory data analysis / experimentation
+- ├── requirements.txt    # Project dependencies
+- ├── setup.py            # for package building
+- └── README.md           # This file
 
 
 # 3-Installation & Setup
