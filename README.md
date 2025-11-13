@@ -34,7 +34,7 @@ Fake_News_MLProject/
 
 # 3-Installation & Setup
 ### Clone the repo
-git clone <repo-url>
+git clone <repo_url>
 
 cd Fake_News_MLProject
 
